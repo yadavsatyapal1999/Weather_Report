@@ -5,7 +5,7 @@ import Data from "./Data";
 import "./Data.css";
 import Input from "./Input";
 
-const securityKey = "3TtZqQjC0VSCW42KWi9dRFiBBbAG9cyx";
+const securityKey = "";
 
 export default function Data_API() {
     const [Search, SetSearch] = useState("Gurgaon"); // Input to search weather for a particular location
