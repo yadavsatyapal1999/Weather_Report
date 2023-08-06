@@ -1,0 +1,295 @@
+@media screen and (max-width:760px) {
+
+
+    .Outer {
+        color: #E9F3EF;
+
+    }
+    .Square:hover {
+        background-color: chartreuse;
+        width: 35vw;
+        height: 35vw;
+        font-size: 8vw;
+        transform: rotate(360deg);
+    }
+    .NonSquare:hover{
+        background-color: chartreuse;
+        width: 200px;
+        height: 200px;
+        font-size: 6vw;
+        transform: rotateZ(360deg);
+    }
+
+    .City {
+        font-size: 8vw;
+        font-family: serif;
+        animation-name: move;
+        position: relative;
+        animation-duration: 15s;
+        width: -moz-fit-content;
+        width: fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        animation-iteration-count: 2;
+        animation-timing-function: linear;
+    }
+
+
+    .Input {
+        border: 2px solid;
+        width: -moz-fit-content;
+        width: fit-content;
+        border-radius: 3vw;
+        padding: 2vw;
+        box-sizing: border-box;
+        box-shadow: 2vw 2vw;
+        margin-bottom: 15px;
+        margin: auto;
+        margin-bottom: 4vw;
+        background-color: #282c34;
+    }
+
+    .input_txt {
+        font-family: serif;
+        font-size: 6vw;
+    }
+
+    .inpt {
+        margin-left: 3vw;
+        margin-right: 1vw;
+        height: 4vw;
+        border-radius: 1vw;
+        width: 20vw;
+        font-size: 3vw;
+        font-family: ui-monospace;
+    }
+
+    .btn {
+        width: fit-content;
+        height: fit-content;
+        border-radius: 2vw;
+        background-color: #282c34;
+        color: #E9F3EF;
+    }
+
+    .Rain {
+        margin: auto;
+        font-size: 6vw;
+        border: 1px solid;
+        width: 30vw;
+        border-radius: 2vw;
+        padding: 6px;
+        height: 30vw;
+        box-sizing: border-box;
+        box-shadow: 10px 15px 12px lightseagreen;
+        z-index: 2;
+        position: relative;
+        animation-name: Left;
+        animation-duration: 8s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        transition: width 2s, height 2s, transform 2s;
+    }
+
+    .Temp {
+        margin: auto;
+        font-size: 6vw;
+        border: 1px solid;
+        width: 30vw;
+        border-radius: 2vw;
+        padding: 6px;
+        height: 30vw;
+        box-sizing: border-box;
+        box-shadow: 10px 15px 12px lightseagreen;
+        z-index: 1;
+        position: relative;
+        overflow-x: hidden;
+        transition: width 2s, height 2s, transform 2s;
+    }
+
+    .Real_feel {
+        margin: auto;
+        font-size: 6vw;
+        border: 1px solid;
+        width: 30vw;
+        border-radius: 2vw;
+        padding: 6px;
+        height: 30vw;
+        box-sizing: border-box;
+        box-shadow: 10px 15px 12px lightseagreen;
+        z-index: 0;
+        position: relative;
+        animation-name: Right;
+        animation-duration: 8s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        transition: width 2s, height 2s, transform 2s;
+    }
+
+    .Hello {
+        display: flex;
+        justify-content: space-around;
+        text-align: -webkit-center;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        position: relative;
+        height: 50vw;
+    }
+
+    .HelloL {
+
+        justify-content: space-around;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        position: relative;
+        height: auto;
+    }
+
+
+    .Circle {
+
+        box-sizing: border-box;
+        box-shadow: 10px 15px 12px lightseagreen;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        border: 2px solid;
+        transition: width 2s, height 2s, transform 2s;
+    }
+
+    /* Style for the circular loader */
+    .loader {
+        border: 10px solid #f3f3f3;
+        /* Light gray border */
+        border-top: 10px solid #3498db;
+        /* Blue border on top to create the spinning effect */
+        border-radius: 50%;
+        /* Create a circle shape */
+        width: 70px;
+        /* Adjust the size of the loader */
+        height: 70px;
+        animation: spin 8s linear infinite;
+        /* Apply the spin animation */
+        margin: 20px auto;
+        /* Center the loader horizontally using auto margins */
+    }
+
+
+
+    .last {
+        width: 90%;
+        margin: auto;
+        border: 2px solid;
+        box-shadow: 10px 10px 5px lightgreen;
+        margin-top: 8vw;
+        border-radius: 4vw;
+        font-size: 6vw;
+        padding: 30px;
+    }
+
+    .Hello_First {
+        z-index: 1;
+        position: relative;
+        animation-name: Up;
+        animation-duration: 6s;
+        animation-timing-function: linear;
+    }
+
+    .Hello_Second {
+        z-index: 1;
+        position: relative;
+    }
+
+    @keyframes Left {
+        0% {
+            left: 450px;
+            top: 0px;
+            background-color: #E9F3EF;
+        }
+
+        20% {
+            left: 450px;
+            top: 0px;
+            background-color: aquamarine;
+        }
+
+        80% {
+            left: -30px;
+            top: x;
+            background-color: chartreuse;
+        }
+
+        100% {
+            left: 0px;
+            top: 0px;
+        }
+    }
+
+    @keyframes Right {
+        0% {
+            left: -450px;
+            top: 0px;
+            background-color: #E9F3EF;
+        }
+
+        20% {
+            left: -450px;
+            top: 0px;
+            background-color: aquamarine;
+        }
+
+        80% {
+            left: 30px;
+            top: 0px;
+            background-color: chartreuse;
+        }
+
+        100% {
+            left: 0px;
+            top: 0px;
+        }
+    }
+
+
+    @keyframes move {
+        0% {
+            left: 10px;
+            top: 0px;
+            color: #E9F3EF;
+        }
+
+        50% {
+            left: 90%;
+            top: 0px;
+            color: aquamarine;
+        }
+
+        100% {
+            left: 0px;
+            top: 0px;
+            color: #E9F3EF;
+        }
+    }
+
+    /* Keyframes for the spinning animation */
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes Up {
+        0% {
+            top: 160px;
+
+        }
+
+        100% {
+            top: 0px;
+        }
+    }
+}

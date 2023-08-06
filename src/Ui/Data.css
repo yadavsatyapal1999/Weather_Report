@@ -1,0 +1,293 @@
+@media screen and (min-width: 760px) {
+    /* Outer Component */
+    .Outer {
+        color: #E9F3EF;
+
+    }
+/* Add effect to square box on hover */
+    .Square:hover {
+        background-color: chartreuse;
+        width: 20vw;
+        height: 15vw;
+        font-size: 2vw;
+        transform: rotate(360deg);
+    }
+    /* Add effect to circular box on hover */
+    .NonSquare:hover{
+        background-color: chartreuse;
+        width: 200px;
+        height: 200px;
+        font-size: 2vw;
+        transform: rotateZ(360deg);
+    }
+/* Property for City Name*/
+    .City {
+        font-size: xxx-large;
+        font-family: serif;
+        position: relative;
+        /* Add animation to move left and right*/
+        animation-name: move;
+        animation-duration: 15s;
+        width: fit-content;
+        height: fit-content;
+        animation-iteration-count: 2;
+        animation-timing-function: linear;
+    }
+
+
+    .Input {
+        border: 2px solid;
+        width: fit-content;
+        border-radius: 3vw;
+        padding: 6px;
+        box-sizing: border-box;
+        box-shadow: 8px 8px;
+        margin-bottom: 15px;
+        margin: auto;
+        margin-bottom: 12px;
+        background-color: #282c34;
+    }
+
+    .input_txt {
+        font-family: serif;
+        font-size: 6vw;
+    }
+
+    .inpt {
+        margin-left: 3vw;
+        margin-right: 1vw;
+        height: 4vw;
+        border-radius: 1vw;
+        width: 20vw;
+        font-size: 3vw;
+        font-family: ui-monospace;
+    }
+
+    .btn {
+        width: 10vw;
+        height: 4vw;
+        border-radius: 2vw;
+        background-color: #282c34;
+        color: #E9F3EF;
+    }
+
+    .Rain {
+        margin: auto;
+        font-size: x-large;
+        border: 1px solid;
+        width: 15vw;
+        border-radius: 2vw;
+        padding: 6px;
+        height: 10vw;
+        box-sizing: border-box;
+        box-shadow: 10px 15px 12px lightseagreen;
+        z-index: 2;
+        position: relative;
+        /* Add animation effect to move square  from center to left */
+        animation-name: Left;
+        animation-duration: 8s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        /* Add transistion effect on hover*/
+        transition: width 2s, height 2s, transform 2s;
+    }
+
+    .Temp {
+        margin: auto;
+        font-size: x-large;
+        border: 1px solid;
+        width: 15vw;
+        border-radius: 2vw;
+        padding: 6px;
+        height: 10vw;
+        box-sizing: border-box;
+        box-shadow: 10px 15px 12px lightseagreen;
+        z-index: 1;
+        position: relative;
+        /* Add transistion effect on hover*/
+        transition: width 2s, height 2s, transform 2s;
+    }
+
+    .Real_feel {
+        margin: auto;
+        font-size: x-large;
+        border: 1px solid;
+        width: 15vw;
+        border-radius: 2vw;
+        padding: 6px;
+        height: 10vw;
+        box-sizing: border-box;
+        box-shadow: 10px 15px 12px lightseagreen;
+        z-index: 0;
+        position: relative;
+        /* Add animation effect to move  square from center right*/
+        animation-name: Right;
+        animation-duration: 8s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        /* Add transistion effect on hover*/
+        transition: width 2s, height 2s, transform 2s;
+
+    }
+
+    .Hello {
+        display: flex;
+        justify-content: space-around;
+        text-align: -webkit-center;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        position: relative;
+    }
+
+
+    .Circle {
+
+        box-sizing: border-box;
+        box-shadow: 10px 15px 12px lightseagreen;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        border: 2px solid;
+        /* Add transistion effect on hover*/
+        transition: width 2s, height 2s, transform 2s;
+    }
+
+    /* Style for the circular loader */
+    .loader {
+        border: 10px solid #f3f3f3;
+        border-top: 10px solid #3498db;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        animation: spin 8s linear infinite;
+        margin: 20px auto;
+    }
+
+
+
+    .last {
+        width: 90%;
+        margin: auto;
+        border: 2px solid;
+        box-shadow: 10px 10px 5px lightgreen;
+        margin-top: 60px;
+        border-radius: 4vw;
+        font-size: xx-large;
+        padding: 30px;
+    }
+
+    .Hello_First {
+        z-index: 1;
+        position: relative;
+        animation-name: Up;
+        animation-duration: 6s;
+        animation-timing-function: linear;
+    }
+
+    .Hello_Second {
+        z-index: 1;
+        position: relative;
+    }
+
+    .HelloL {
+        display: flex;
+        justify-content: space-around;
+        text-align: -webkit-center;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        position: relative;
+    }
+/* Add animation  to move from center to left corner*/
+    @keyframes Left {
+        0% {
+            left: 450px;
+            top: 0px;
+            background-color: #E9F3EF;
+        }
+
+        20% {
+            left: 450px;
+            top: 0px;
+            background-color: aquamarine;
+        }
+
+        80% {
+            left: -30px;
+            top: x;
+            background-color: chartreuse;
+        }
+
+        100% {
+            left: 0px;
+            top: 0px;
+        }
+    }
+/* Add animation  to move from center to right corner*/
+    @keyframes Right {
+        0% {
+            left: -450px;
+            top: 0px;
+            background-color: #E9F3EF;
+        }
+
+        20% {
+            left: -450px;
+            top: 0px;
+            background-color: aquamarine;
+        }
+
+        80% {
+            left: 30px;
+            top: 0px;
+            background-color: chartreuse;
+        }
+
+        100% {
+            left: 0px;
+            top: 0px;
+        }
+    }
+
+/* Add animation  to move left right */
+    @keyframes move {
+        0% {
+            left: 10px;
+            top: 0px;
+            color: #E9F3EF;
+        }
+
+        50% {
+            left: 1000px;
+            top: 0px;
+            color: aquamarine;
+        }
+
+        100% {
+            left: 0px;
+            top: 0px;
+            color: #E9F3EF;
+        }
+    }
+
+    /* Keyframes for the spinning animation */
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes Up {
+        0% {
+            top: 160px;
+
+        }
+
+        100% {
+            top: 0px;
+        }
+    }
+}

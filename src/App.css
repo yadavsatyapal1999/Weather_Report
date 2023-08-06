@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+}
+
+#root{
+  padding-bottom: 2vw;
+  background-color: #181616;
+}
+
+.Outer {
+  background-color: #181616;
+  width: 100%;
+  height: auto;
+}
+
